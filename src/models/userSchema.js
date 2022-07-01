@@ -7,18 +7,22 @@ const userSchema = new mongoose.Schema({
     //     required: true,
     //     minlength: 3
     // },
-    phonenumber: {
-        type: Number,
-        required: true,
-        min: 10,
-        unique: [true, 'phone number already exist']
-    },
+    // phonenumber: {
+    //     type: Number,
+    //     required: true,
+    //     min: 10,
+    //     unique: [true, 'phone number already exist']
+    // },
     // language: {
     //     type: String,
     //     required: true,
 
     // },
-    // country: {
+    // dob: {
+    //     type: Date,
+    //     required: true,
+    // },
+    // currency: {
     //     type: String,
     //     required: true,
 
@@ -47,10 +51,23 @@ const userSchema = new mongoose.Schema({
     //     type: String,
     //     required: true,
     // },
-    // country: {
+    // issuingcountry: {
     //     type: String,
     //     required: true,
-    // }
+    // },
+    front: {
+        type: String,
+
+    },
+    back: {
+        type: String,
+
+    },
+    selfie: {
+        type: String,
+
+    }
+
 })
 
 
